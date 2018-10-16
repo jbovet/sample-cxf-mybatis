@@ -19,16 +19,14 @@ package cl.tuxy.cxf.service;
 import cl.tuxy.cxf.mapper.UserMapper;
 import cl.tuxy.cxf.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
-import javax.jws.WebService;
 import java.util.List;
 
 /**
  * Created by josebovet on 10/17/16.
  */
-@WebService(serviceName = "UserService",
-        portName = "UserServicePort",
-        endpointInterface = "cl.tuxy.cxf.service.UserService")
+@Service
 public class UserServiceImpl implements UserService {
 
     @Autowired

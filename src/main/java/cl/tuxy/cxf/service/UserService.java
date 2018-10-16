@@ -18,22 +18,15 @@ package cl.tuxy.cxf.service;
 
 import cl.tuxy.cxf.model.User;
 
-import javax.jws.WebResult;
-import javax.jws.WebService;
 import java.util.List;
 
 /**
  * Created by josebovet on 10/17/16.
  */
-@WebService(name = "UserService")
 public interface UserService {
 
-
-    @WebResult(name = "userList")
     List<User> listUsers();
 
-
-    @WebResult(name = "User")
     User getUserByid(Integer id);
 
 }
