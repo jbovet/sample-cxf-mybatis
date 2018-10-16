@@ -1,3 +1,5 @@
+drop table if exists user;
+
 create table user (id int primary key auto_increment, name varchar, email varchar, age int);
 
 insert into user (name, email, age) values ('Chuck Norris', 'chuck@norris', '76');

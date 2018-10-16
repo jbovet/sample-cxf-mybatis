@@ -1,0 +1,13 @@
+spring:
+  profiles:
+    active: staging
+  h2:
+    console:
+      enabled: false
+      path: /h2
+  datasource:
+    url: jdbc:h2:file:~/storage-mb
+    username: service-usr
+    password: qw3rTy
+    driver-class-name: org.h2.Driver
+    schema: classpath:import.sql

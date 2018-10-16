@@ -22,10 +22,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class BootCxfMybatisApplication {
 
-
     public static void main(String[] args) {
         SpringApplication.run(BootCxfMybatisApplication.class, args);
     }
-
 
 }

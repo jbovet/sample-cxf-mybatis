@@ -34,5 +34,4 @@ public interface UserMapper {
     @Select("SELECT * FROM user WHERE ID =#{id}")
     User findUserById(Integer id);
 
-
 }
